@@ -217,12 +217,12 @@ export default function App() {
   const categories = ['All', ...new Set(products.map(p => p.category))];
 
   return (
-    <div className="min-h-screen bg-slate-900 text-slate-100 font-sans antialiased selection:bg-emerald-500 selection:text-white">
+    <div className="min-h-screen bg-slate-900 text-slate-100 font-sans antialiased selection:bg-rose-500 selection:text-white">
       
       {/* Floating Notification Toast */}
       {notification && (
-        <div className="fixed bottom-6 right-6 z-50 bg-slate-800 border border-emerald-500/50 text-white px-4 py-3 rounded-xl shadow-2xl flex items-center space-x-3 animate-bounce">
-          <Sparkles className="w-5 h-5 text-emerald-400" />
+        <div className="fixed bottom-6 right-6 z-50 bg-slate-800 border border-rose-500/50 text-white px-4 py-3 rounded-xl shadow-2xl flex items-center space-x-3 animate-bounce">
+          <Sparkles className="w-5 h-5 text-rose-400" />
           <span className="text-sm font-medium">{notification}</span>
         </div>
       )}
@@ -232,11 +232,11 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           
           <div className="flex items-center space-x-4">
-            <div className="flex items-center space-x-2 bg-gradient-to-r from-emerald-500 to-red-600 px-3 py-1.5 rounded-lg shadow-lg shadow-emerald-500/20">
+            <div className="flex items-center space-x-2 bg-gradient-to-r from-rose-500 to-red-600 px-3 py-1.5 rounded-lg shadow-lg shadow-rose-500/20">
               <Sparkles className="w-5 h-5 text-white animate-pulse" />
               <span className="font-bold tracking-wider text-white text-lg">syaharuddinstor</span>
             </div>
-            <span className="hidden sm:inline-block px-2.5 py-0.5 text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full">
+            <span className="hidden sm:inline-block px-2.5 py-0.5 text-xs font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/20 rounded-full">
               Laravel v10.x UI
             </span>
           </div>
@@ -246,7 +246,7 @@ export default function App() {
               onClick={() => setActiveTab('store')}
               className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                 activeTab === 'store' 
-                  ? 'bg-emerald-500 text-white shadow-md shadow-emerald-500/25' 
+                  ? 'bg-rose-500 text-white shadow-md shadow-rose-500/25' 
                   : 'text-slate-400 hover:text-white hover:bg-slate-800'
               }`}
             >
@@ -257,7 +257,7 @@ export default function App() {
               onClick={() => setActiveTab('dashboard')}
               className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                 activeTab === 'dashboard' 
-                  ? 'bg-emerald-500 text-white shadow-md shadow-emerald-500/25' 
+                  ? 'bg-rose-500 text-white shadow-md shadow-rose-500/25' 
                   : 'text-slate-400 hover:text-white hover:bg-slate-800'
               }`}
             >
@@ -271,10 +271,10 @@ export default function App() {
               href={`https://wa.me/${whatsappNumber}`}
               target="_blank"
               rel="noreferrer"
-              className="hidden lg:flex items-center space-x-2 text-xs text-slate-300 bg-slate-900/60 px-3.5 py-2 rounded-xl border border-slate-700 hover:border-emerald-500/50 transition-all"
+              className="hidden lg:flex items-center space-x-2 text-xs text-slate-300 bg-slate-900/60 px-3.5 py-2 rounded-xl border border-slate-700 hover:border-rose-500/50 transition-all"
             >
-              <Phone className="w-4 h-4 text-emerald-400" />
-              <span>WhatsApp CS: <strong className="text-emerald-400">+{whatsappNumber}</strong></span>
+              <Phone className="w-4 h-4 text-rose-400" />
+              <span>WhatsApp CS: <strong className="text-rose-400">+{whatsappNumber}</strong></span>
             </a>
 
             <button
@@ -283,7 +283,7 @@ export default function App() {
             >
               <ShoppingCart className="w-5 h-5" />
               {cartItemCount > 0 && (
-                <span className="absolute -top-1.5 -right-1.5 bg-emerald-500 text-white font-bold text-xs w-5 h-5 rounded-full flex items-center justify-center shadow-lg animate-pulse">
+                <span className="absolute -top-1.5 -right-1.5 bg-rose-500 text-white font-bold text-xs w-5 h-5 rounded-full flex items-center justify-center shadow-lg animate-pulse">
                   {cartItemCount}
                 </span>
               )}
@@ -295,7 +295,7 @@ export default function App() {
           <button
             onClick={() => setActiveTab('store')}
             className={`flex items-center space-x-1.5 text-sm font-medium px-4 py-1.5 rounded-lg ${
-              activeTab === 'store' ? 'bg-emerald-500 text-white' : 'text-slate-400'
+              activeTab === 'store' ? 'bg-rose-500 text-white' : 'text-slate-400'
             }`}
           >
             <Store className="w-4 h-4" />
@@ -304,7 +304,7 @@ export default function App() {
           <button
             onClick={() => setActiveTab('dashboard')}
             className={`flex items-center space-x-1.5 text-sm font-medium px-4 py-1.5 rounded-lg ${
-              activeTab === 'dashboard' ? 'bg-emerald-500 text-white' : 'text-slate-400'
+              activeTab === 'dashboard' ? 'bg-rose-500 text-white' : 'text-slate-400'
             }`}
           >
             <LayoutDashboard className="w-4 h-4" />
@@ -321,14 +321,14 @@ export default function App() {
             
             {/* Hero Banner */}
             <div className="relative overflow-hidden bg-gradient-to-r from-slate-800 via-slate-800/90 to-slate-900 border border-slate-700/80 rounded-2xl shadow-xl p-8 sm:p-12">
-              <div className="absolute right-0 top-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+              <div className="absolute right-0 top-0 w-96 h-96 bg-rose-500/10 rounded-full blur-3xl pointer-events-none"></div>
               <div className="relative z-10 max-w-2xl space-y-4">
-                <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold">
+                <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-rose-500/10 border border-rose-500/30 text-rose-400 text-xs font-semibold">
                   <Sparkles className="w-3.5 h-3.5" />
                   <span>Koleksi Eksklusif Developer & Tech Enthusiast</span>
                 </div>
                 <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
-                  Build Better, Ship Faster, <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-red-500">Live Stylish.</span>
+                  Build Better, Ship Faster, <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-red-500">Live Stylish.</span>
                 </h1>
                 <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
                   Toko online modern bergaya Laravel framework. Belanja perlengkapan coding, merchandise eksklusif, dan aksesori premium dengan pemesanan instan via WhatsApp.
@@ -336,7 +336,7 @@ export default function App() {
                 <div className="pt-2 flex flex-wrap gap-4">
                   <a
                     href="#catalog"
-                    className="px-6 py-3 bg-gradient-to-r from-emerald-500 to-red-600 hover:from-emerald-600 hover:to-red-700 text-white font-semibold rounded-xl shadow-lg shadow-emerald-500/25 transition-all flex items-center space-x-2"
+                    className="px-6 py-3 bg-gradient-to-r from-rose-500 to-red-600 hover:from-rose-600 hover:to-red-700 text-white font-semibold rounded-xl shadow-lg shadow-rose-500/25 transition-all flex items-center space-x-2"
                   >
                     <span>Jelajahi Produk</span>
                     <ArrowRight className="w-4 h-4" />
@@ -347,7 +347,7 @@ export default function App() {
                     rel="noreferrer"
                     className="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-600 font-semibold rounded-xl transition-all flex items-center space-x-2"
                   >
-                    <Phone className="w-4 h-4 text-emerald-400" />
+                    <Phone className="w-4 h-4 text-rose-400" />
                     <span>Hubungi CS WhatsApp</span>
                   </a>
                 </div>
@@ -357,7 +357,7 @@ export default function App() {
             {/* Features Badge Row */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="bg-slate-800/50 border border-slate-700/60 p-4 rounded-xl flex items-center space-x-4">
-                <div className="p-3 bg-emerald-500/10 text-emerald-400 rounded-lg">
+                <div className="p-3 bg-rose-500/10 text-rose-400 rounded-lg">
                   <ShieldCheck className="w-6 h-6" />
                 </div>
                 <div>
@@ -366,7 +366,7 @@ export default function App() {
                 </div>
               </div>
               <div className="bg-slate-800/50 border border-slate-700/60 p-4 rounded-xl flex items-center space-x-4">
-                <div className="p-3 bg-emerald-500/10 text-emerald-400 rounded-lg">
+                <div className="p-3 bg-rose-500/10 text-rose-400 rounded-lg">
                   <Truck className="w-6 h-6" />
                 </div>
                 <div>
@@ -396,7 +396,7 @@ export default function App() {
                     placeholder="Cari produk impianmu..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="w-full bg-slate-900 border border-slate-700 rounded-xl pl-10 pr-4 py-2.5 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all"
+                    className="w-full bg-slate-900 border border-slate-700 rounded-xl pl-10 pr-4 py-2.5 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-rose-500 transition-all"
                   />
                 </div>
 
@@ -408,7 +408,7 @@ export default function App() {
                       onClick={() => setSelectedCategory(cat)}
                       className={`px-4 py-2 rounded-xl text-xs font-semibold shrink-0 transition-all ${
                         selectedCategory === cat
-                          ? 'bg-emerald-500 text-white shadow-md shadow-emerald-500/20'
+                          ? 'bg-rose-500 text-white shadow-md shadow-rose-500/20'
                           : 'bg-slate-900/60 text-slate-300 border border-slate-700 hover:bg-slate-700'
                       }`}
                     >
@@ -429,7 +429,7 @@ export default function App() {
                   {filteredProducts.map(product => (
                     <div 
                       key={product.id}
-                      className="bg-slate-800/70 border border-slate-700/70 rounded-2xl overflow-hidden hover:border-emerald-500/50 transition-all duration-300 flex flex-col group shadow-lg"
+                      className="bg-slate-800/70 border border-slate-700/70 rounded-2xl overflow-hidden hover:border-rose-500/50 transition-all duration-300 flex flex-col group shadow-lg"
                     >
                       <div className="relative h-52 overflow-hidden bg-slate-900">
                         <img 
@@ -437,7 +437,7 @@ export default function App() {
                           alt={product.name}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         />
-                        <span className="absolute top-3 right-3 px-2.5 py-1 bg-slate-900/80 backdrop-blur-md border border-slate-700 text-xs font-medium text-emerald-400 rounded-lg">
+                        <span className="absolute top-3 right-3 px-2.5 py-1 bg-slate-900/80 backdrop-blur-md border border-slate-700 text-xs font-medium text-rose-400 rounded-lg">
                           {product.category}
                         </span>
                       </div>
@@ -451,7 +451,7 @@ export default function App() {
                               <span className="text-slate-500">({product.reviews})</span>
                             </div>
                           </div>
-                          <h3 className="font-bold text-lg text-white group-hover:text-emerald-400 transition-colors line-clamp-1">
+                          <h3 className="font-bold text-lg text-white group-hover:text-rose-400 transition-colors line-clamp-1">
                             {product.name}
                           </h3>
                           <p className="text-xs text-slate-400 line-clamp-2 leading-relaxed">
@@ -462,13 +462,13 @@ export default function App() {
                         <div className="pt-2 border-t border-slate-700/60 flex items-center justify-between">
                           <div>
                             <span className="text-xs text-slate-500 block">Harga</span>
-                            <span className="text-base sm:text-lg font-extrabold text-emerald-400">
+                            <span className="text-base sm:text-lg font-extrabold text-rose-400">
                               Rp {product.price.toLocaleString('id-ID')}
                             </span>
                           </div>
                           <button
                             onClick={() => addToCart(product)}
-                            className="px-4 py-2.5 bg-emerald-500 hover:bg-emerald-600 text-white font-medium text-xs rounded-xl shadow-md shadow-emerald-500/20 transition-all flex items-center space-x-1.5"
+                            className="px-4 py-2.5 bg-rose-500 hover:bg-rose-600 text-white font-medium text-xs rounded-xl shadow-md shadow-rose-500/20 transition-all flex items-center space-x-1.5"
                           >
                             <ShoppingCart className="w-3.5 h-3.5" />
                             <span>+ Keranjang</span>
@@ -489,7 +489,7 @@ export default function App() {
             
             <div className="bg-slate-800/80 border border-slate-700/60 p-6 rounded-2xl flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
               <div>
-                <div className="flex items-center space-x-2 text-emerald-400 text-xs font-semibold mb-1">
+                <div className="flex items-center space-x-2 text-rose-400 text-xs font-semibold mb-1">
                   <LayoutDashboard className="w-4 h-4" />
                   <span>LARAVEL NOVA MANAGEMENT PANEL</span>
                 </div>
@@ -498,7 +498,7 @@ export default function App() {
               </div>
               <div className="bg-slate-900 border border-slate-700 px-4 py-2 rounded-xl text-right">
                 <span className="text-xs text-slate-400 block">Total Produk Aktif</span>
-                <span className="text-lg font-bold text-emerald-400">{products.length} Item</span>
+                <span className="text-lg font-bold text-rose-400">{products.length} Item</span>
               </div>
             </div>
 
@@ -506,7 +506,7 @@ export default function App() {
               
               <div className="bg-slate-800/70 border border-slate-700/60 p-6 rounded-2xl space-y-4 lg:col-span-1">
                 <h3 className="font-bold text-white text-base flex items-center space-x-2 border-b border-slate-700 pb-3">
-                  <Plus className="w-4 h-4 text-emerald-500" />
+                  <Plus className="w-4 h-4 text-rose-500" />
                   <span>Tambah Produk Baru</span>
                 </h3>
 
@@ -519,7 +519,7 @@ export default function App() {
                       placeholder="Contoh: Laravel Cap Pro"
                       value={newProdName}
                       onChange={(e) => setNewProdName(e.target.value)}
-                      className="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2 text-sm text-white placeholder-slate-600 focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+                      className="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2 text-sm text-white placeholder-slate-600 focus:ring-2 focus:ring-rose-500 focus:outline-none"
                     />
                   </div>
 
@@ -528,7 +528,7 @@ export default function App() {
                     <select
                       value={newProdCategory}
                       onChange={(e) => setNewProdCategory(e.target.value)}
-                      className="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2 text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+                      className="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2 text-sm text-white focus:ring-2 focus:ring-rose-500 focus:outline-none"
                     >
                       <option value="Apparel">Apparel</option>
                       <option value="Accessories">Accessories</option>
@@ -544,7 +544,7 @@ export default function App() {
                       placeholder="150000"
                       value={newProdPrice}
                       onChange={(e) => setNewProdPrice(e.target.value)}
-                      className="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2 text-sm text-white placeholder-slate-600 focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+                      className="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2 text-sm text-white placeholder-slate-600 focus:ring-2 focus:ring-rose-500 focus:outline-none"
                     />
                   </div>
 
@@ -555,7 +555,7 @@ export default function App() {
                       placeholder="https://images.unsplash.com/..."
                       value={newProdImage}
                       onChange={(e) => setNewProdImage(e.target.value)}
-                      className="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2 text-sm text-white placeholder-slate-600 focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+                      className="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2 text-sm text-white placeholder-slate-600 focus:ring-2 focus:ring-rose-500 focus:outline-none"
                     />
                   </div>
 
@@ -566,13 +566,13 @@ export default function App() {
                       placeholder="Spesifikasi produk..."
                       value={newProdDesc}
                       onChange={(e) => setNewProdDesc(e.target.value)}
-                      className="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2 text-sm text-white placeholder-slate-600 focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+                      className="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2 text-sm text-white placeholder-slate-600 focus:ring-2 focus:ring-rose-500 focus:outline-none"
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full py-2.5 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold text-sm rounded-xl shadow-md shadow-emerald-500/20 transition-all flex items-center justify-center space-x-2"
+                    className="w-full py-2.5 bg-rose-500 hover:bg-rose-600 text-white font-semibold text-sm rounded-xl shadow-md shadow-rose-500/20 transition-all flex items-center justify-center space-x-2"
                   >
                     <Plus className="w-4 h-4" />
                     <span>Simpan Produk</span>
@@ -585,7 +585,7 @@ export default function App() {
                     type="text"
                     value={whatsappNumber}
                     onChange={(e) => setWhatsappNumber(e.target.value)}
-                    className="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2 text-sm text-emerald-400 font-mono focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+                    className="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2 text-sm text-rose-400 font-mono focus:ring-2 focus:ring-rose-500 focus:outline-none"
                   />
                   <p className="text-[11px] text-slate-500 mt-1">Format: 628xxxxxxxxxx (Tanpa angka 0 di depan)</p>
                 </div>
@@ -593,7 +593,7 @@ export default function App() {
 
               <div className="bg-slate-800/70 border border-slate-700/60 p-6 rounded-2xl space-y-4 lg:col-span-2 overflow-hidden">
                 <h3 className="font-bold text-white text-base flex items-center space-x-2 border-b border-slate-700 pb-3">
-                  <Package className="w-4 h-4 text-emerald-500" />
+                  <Package className="w-4 h-4 text-rose-500" />
                   <span>Daftar Inventaris Produk</span>
                 </h3>
 
@@ -619,7 +619,7 @@ export default function App() {
                             <span className="font-medium text-white line-clamp-1">{product.name}</span>
                           </td>
                           <td className="py-3 px-4">
-                            <span className="px-2.5 py-1 text-xs rounded-md bg-slate-900 text-emerald-400 border border-slate-700">
+                            <span className="px-2.5 py-1 text-xs rounded-md bg-slate-900 text-rose-400 border border-slate-700">
                               {product.category}
                             </span>
                           </td>
@@ -656,8 +656,8 @@ export default function App() {
             <span>&copy; {new Date().getFullYear()} — Built with React & Tailwind CSS.</span>
           </div>
           <div className="flex items-center space-x-4">
-            <span className="flex items-center space-x-1 text-emerald-400">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+            <span className="flex items-center space-x-1 text-rose-400">
+              <span className="w-2 h-2 rounded-full bg-rose-400 animate-ping"></span>
               <span>WhatsApp Gateway Active</span>
             </span>
           </div>
@@ -674,7 +674,7 @@ export default function App() {
               
               <div className="p-6 border-b border-slate-800 flex items-center justify-between bg-slate-800/50">
                 <div className="flex items-center space-x-2">
-                  <ShoppingCart className="w-5 h-5 text-emerald-500" />
+                  <ShoppingCart className="w-5 h-5 text-rose-500" />
                   <h2 className="font-bold text-white text-lg">Keranjang Belanja</h2>
                 </div>
                 <button 
@@ -692,7 +692,7 @@ export default function App() {
                     <p className="text-slate-400 font-medium">Keranjang kamu masih kosong</p>
                     <button
                       onClick={() => setIsCartOpen(false)}
-                      className="px-4 py-2 bg-emerald-500 text-white rounded-xl text-xs font-semibold"
+                      className="px-4 py-2 bg-rose-500 text-white rounded-xl text-xs font-semibold"
                     >
                       Mulai Belanja
                     </button>
@@ -703,7 +703,7 @@ export default function App() {
                       <img src={item.image} alt={item.name} className="w-16 h-16 rounded-lg object-cover bg-slate-900 shrink-0" />
                       <div className="flex-1 min-w-0">
                         <h4 className="font-semibold text-white text-sm truncate">{item.name}</h4>
-                        <span className="text-xs text-emerald-400 font-bold block mt-0.5">
+                        <span className="text-xs text-rose-400 font-bold block mt-0.5">
                           Rp {(item.price * item.quantity).toLocaleString('id-ID')}
                         </span>
                         
@@ -739,14 +739,14 @@ export default function App() {
                 <div className="p-6 border-t border-slate-800 bg-slate-800/50 space-y-4">
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-slate-400">Total Pembayaran</span>
-                    <span className="text-xl font-extrabold text-emerald-400">
+                    <span className="text-xl font-extrabold text-rose-400">
                       Rp {cartTotal.toLocaleString('id-ID')}
                     </span>
                   </div>
 
                   <button
                     onClick={() => setIsCheckoutOpen(true)}
-                    className="w-full py-3.5 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-bold rounded-xl shadow-lg shadow-emerald-500/25 transition-all flex items-center justify-center space-x-2"
+                    className="w-full py-3.5 bg-gradient-to-r from-rose-500 to-teal-600 hover:from-rose-600 hover:to-teal-700 text-white font-bold rounded-xl shadow-lg shadow-rose-500/25 transition-all flex items-center justify-center space-x-2"
                   >
                     <Phone className="w-5 h-5" />
                     <span>Checkout via WhatsApp</span>
@@ -767,7 +767,7 @@ export default function App() {
           <div className="relative w-full max-w-lg bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl overflow-hidden z-10">
             <div className="p-6 border-b border-slate-800 bg-slate-800/50 flex items-center justify-between">
               <div className="flex items-center space-x-2">
-                <div className="p-2 bg-emerald-500/10 text-emerald-400 rounded-lg">
+                <div className="p-2 bg-rose-500/10 text-rose-400 rounded-lg">
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
@@ -789,7 +789,7 @@ export default function App() {
                   placeholder="Contoh: Taylor Otwell"
                   value={customerName}
                   onChange={(e) => setCustomerName(e.target.value)}
-                  className="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+                  className="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:ring-2 focus:ring-rose-500 focus:outline-none"
                 />
               </div>
 
@@ -801,7 +801,7 @@ export default function App() {
                   placeholder="Jalan Sudirman No. 45, RT 01/02, Jakarta Selatan"
                   value={customerAddress}
                   onChange={(e) => setCustomerAddress(e.target.value)}
-                  className="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+                  className="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:ring-2 focus:ring-rose-500 focus:outline-none"
                 />
               </div>
 
@@ -810,7 +810,7 @@ export default function App() {
                 <select
                   value={paymentMethod}
                   onChange={(e) => setPaymentMethod(e.target.value)}
-                  className="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+                  className="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:ring-2 focus:ring-rose-500 focus:outline-none"
                 >
                   <option value="Transfer Bank BCA">Transfer Bank BCA</option>
                   <option value="Transfer Bank Mandiri">Transfer Bank Mandiri</option>
@@ -826,7 +826,7 @@ export default function App() {
                   placeholder="Contoh: Warna hitam ukuran L"
                   value={orderNotes}
                   onChange={(e) => setOrderNotes(e.target.value)}
-                  className="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+                  className="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:ring-2 focus:ring-rose-500 focus:outline-none"
                 />
               </div>
 
@@ -840,7 +840,7 @@ export default function App() {
                 </button>
                 <button
                   type="submit"
-                  className="px-6 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs rounded-xl shadow-lg shadow-emerald-600/30 flex items-center space-x-2"
+                  className="px-6 py-2.5 bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs rounded-xl shadow-lg shadow-rose-600/30 flex items-center space-x-2"
                 >
                   <ExternalLink className="w-4 h-4" />
                   <span>Kirim Pesanan ke WhatsApp</span>
