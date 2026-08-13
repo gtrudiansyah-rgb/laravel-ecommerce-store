@@ -379,7 +379,7 @@ export default function App() {
                   <RotateCcw className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-white text-sm">Garansi Retur</h4>
+                  <h1 className="font-semibold text-white text-sm">Garansi Retur</h1>
                   <p className="text-xs text-slate-400">Jaminan tukar baru jika cacat produksi</p>
                 </div>
               </div>
