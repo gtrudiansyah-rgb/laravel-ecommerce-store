@@ -262,7 +262,7 @@ export default function App() {
               }`}
             >
               <LayoutDashboard className="w-4 h-4" />
-              <span>Admin Nova</span>
+              <span>Admin Syaharuddin</span>
             </button>
           </nav>
 
@@ -336,7 +336,7 @@ export default function App() {
                 <div className="pt-2 flex flex-wrap gap-4">
                   <a
                     href="#catalog"
-                    className="px-6 py-3 bg-gradient-to-r from-green-500 to-red-600 hover:from-rose-600 hover:to-red-700 text-white font-semibold rounded-xl shadow-lg shadow-rose-500/25 transition-all flex items-center space-x-2"
+                    className="px-6 py-3 bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-rose-600 hover:to-red-700 text-white font-semibold rounded-xl shadow-lg shadow-rose-500/25 transition-all flex items-center space-x-2"
                   >
                     <span>Jelajahi Produk</span>
                     <ArrowRight className="w-4 h-4" />
