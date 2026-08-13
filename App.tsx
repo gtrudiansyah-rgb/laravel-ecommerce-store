@@ -233,8 +233,8 @@ export default function App() {
           
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-2 bg-gradient-to-r from-rose-500 to-red-600 px-3 py-1.5 rounded-lg shadow-lg shadow-rose-500/20">
-              <Sparkles className="w-5 h-5 text-white animate-pulse" />
-              <span className="font-bold tracking-wider text-white text-lg">syaharuddinstor</span>
+              
+              <span className="font-bold tracking-wider text-white text-lg">SyaharuddinStore</span>
             </div>
             <span className="hidden sm:inline-block px-2.5 py-0.5 text-xs font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/20 rounded-full">
               Laravel v10.x UI
