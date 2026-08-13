@@ -327,7 +327,7 @@ export default function App() {
                   <Sparkles className="w-3.5 h-3.5" />
                   <span>Koleksi Eksklusif Developer & Tech Enthusiast</span>
                 </div>
-                <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
+                <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-red leading-tight">
                   Build Better, Ship Faster, <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-red-500">Live Stylish.</span>
                 </h1>
                 <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
