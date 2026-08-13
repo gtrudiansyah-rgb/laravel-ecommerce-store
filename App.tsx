@@ -320,7 +320,7 @@ export default function App() {
           <div className="space-y-8">
             
             {/* Hero Banner */}
-            <div className="relative overflow-hidden bg-gradient-to-r from-slate-800 via-slate-800/90 to-slate-900 border border-slate-700/80 rounded-2xl shadow-xl p-8 sm:p-12">
+            <div className="relative overflow-hidden bg-gradient-to-r from-blue-800 via-blue-800/90 to-slate-900 border border-slate-700/80 rounded-2xl shadow-xl p-8 sm:p-12">
               <div className="absolute right-0 top-0 w-96 h-96 bg-rose-500/10 rounded-full blur-3xl pointer-events-none"></div>
               <div className="relative z-10 max-w-2xl space-y-4">
                 <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-rose-500/10 border border-rose-500/30 text-rose-400 text-xs font-semibold">
