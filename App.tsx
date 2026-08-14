@@ -304,7 +304,7 @@ export default function App() {
           <button
             onClick={() => setActiveTab('dashboard')}
             className={`flex items-center space-x-1.5 text-sm font-medium px-4 py-1.5 rounded-lg ${
-              activeTab === 'dashboard' ? 'bg-rose-500 text-white' : 'text-slate-400'
+              activeTab === 'dashboard' ? 'bg-rose-700 text-white' : 'text-slate-200'
             }`}
           >
             <LayoutDashboard className="w-4 h-4" />
