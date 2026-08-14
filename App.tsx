@@ -468,7 +468,7 @@ export default function App() {
                           </div>
                           <button
                             onClick={() => addToCart(product)}
-                            className="px-4 py-2.5 bg-rose-500 hover:bg-rose-600 text-white font-medium text-xs rounded-xl shadow-md shadow-rose-500/20 transition-all flex items-center space-x-1.5"
+                            className="px-4 py-2.5 bg-rose-800 hover:bg-rose-900 text-white font-medium text-xs rounded-xl shadow-md shadow-rose-200/20 transition-all flex items-center space-x-1.5"
                           >
                             <ShoppingCart className="w-3.5 h-3.5" />
                             <span>+ Keranjang</span>
