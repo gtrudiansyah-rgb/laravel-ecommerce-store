@@ -451,9 +451,9 @@ export default function App() {
                               <span className="text-slate-200">({product.reviews})</span>
                             </div>
                           </div>
-                          <h3 className="font-bold text-lg text-white group-hover:text-rose-400 transition-colors line-clamp-1">
+                          <p className="font-bold text-lg text-white group-hover:text-rose-400 transition-colors line-clamp-1">
                             {product.name}
-                          </h3>
+                          </p>
                           <p className="text-xs text-slate-400 line-clamp-2 leading-relaxed">
                             {product.description}
                           </p>
