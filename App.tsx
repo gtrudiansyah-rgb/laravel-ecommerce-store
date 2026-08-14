@@ -361,7 +361,7 @@ export default function App() {
                   <ShieldCheck className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-white text-sm">100% Aman & Terpercaya</h4>
+                  <p className="font-semibold text-white text-sm">100% Aman & Terpercaya</p>
                   <p className="text-xs text-slate-400">Transaksi langsung via WhatsApp resmi</p>
                 </div>
               </div>
@@ -370,7 +370,7 @@ export default function App() {
                   <Truck className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-white text-sm">Pengiriman Cepat</h4>
+                  <p className="font-semibold text-white text-sm">Pengiriman Cepat</p>
                   <p className="text-xs text-slate-400">Kirim ke seluruh wilayah Indonesia</p>
                 </div>
               </div>
@@ -379,7 +379,7 @@ export default function App() {
                   <RotateCcw className="w-6 h-6" />
                 </div>
                 <div>
-                  <h1 className="font-semibold text-white text-sm">Garansi Retur</h1>
+                  <p className="font-semibold text-white text-sm">Garansi Retur</p>
                   <p className="text-xs text-slate-400">Jaminan tukar baru jika cacat produksi</p>
                 </div>
               </div>
