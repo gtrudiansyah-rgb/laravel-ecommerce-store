@@ -279,6 +279,7 @@ export default function App() {
 
             <button
               onClick={() => setIsCartOpen(true)}
+              aria-label="Buka Keranjang Belanja"
               className="relative p-2.5 bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 rounded-xl transition-all flex items-center justify-center shadow-sm"
             >
               <ShoppingCart className="w-5 h-5" />
