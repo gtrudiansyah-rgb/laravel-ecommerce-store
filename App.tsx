@@ -448,7 +448,7 @@ export default function App() {
                             <div className="flex items-center space-x-1 text-amber-400 text-xs font-medium">
                               <Star className="w-3.5 h-3.5 fill-amber-400" />
                               <span>{product.rating}</span>
-                              <span className="text-slate-500">({product.reviews})</span>
+                              <span className="text-slate-200">({product.reviews})</span>
                             </div>
                           </div>
                           <h3 className="font-bold text-lg text-white group-hover:text-rose-400 transition-colors line-clamp-1">
