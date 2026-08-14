@@ -461,7 +461,7 @@ export default function App() {
 
                         <div className="pt-2 border-t border-slate-700/60 flex items-center justify-between">
                           <div>
-                            <span className="text-xs text-slate-500 block">Harga</span>
+                            <span className="text-xs text-slate-200 block">Harga</span>
                             <span className="text-base sm:text-lg font-extrabold text-rose-400">
                               Rp {product.price.toLocaleString('id-ID')}
                             </span>
