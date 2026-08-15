@@ -650,7 +650,7 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <footer className="mt-20 border-t border-slate-800 bg-slate-900 py-8">
+      <footer className="mt-20 border-t border-slate-200 bg-slate-900 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div className="flex items-center space-x-2">
             <span className="font-bold text-slate-300">ArtisanStore</span>
