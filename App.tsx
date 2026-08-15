@@ -246,7 +246,7 @@ export default function App() {
               onClick={() => setActiveTab('store')}
               className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                 activeTab === 'store' 
-                  ? 'bg-rose-800 text-white shadow-md shadow-rose-500/25' 
+                  ? 'bg-rose-800 text-white shadow-md shadow-rose-200/25' 
                   : 'text-slate-200 hover:text-white hover:bg-slate-800'
               }`}
             >
@@ -257,7 +257,7 @@ export default function App() {
               onClick={() => setActiveTab('dashboard')}
               className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                 activeTab === 'dashboard' 
-                  ? 'bg-rose-800 text-white shadow-md shadow-rose-500/25' 
+                  ? 'bg-rose-800 text-white shadow-md shadow-rose-200/25' 
                   : 'text-slate-200 hover:text-white hover:bg-slate-800'
               }`}
             >
@@ -410,7 +410,7 @@ export default function App() {
                       className={`px-4 py-2 rounded-xl text-xs font-semibold shrink-0 transition-all ${
                         selectedCategory === cat
                           ? 'bg-rose-500 text-white shadow-md shadow-rose-500/20'
-                          : 'bg-slate-900/60 text-slate-300 border border-slate-700 hover:bg-slate-700'
+                          : 'bg-slate-800 text-slate-200 border border-slate-700 hover:bg-slate-700'
                       }`}
                     >
                       {cat}
