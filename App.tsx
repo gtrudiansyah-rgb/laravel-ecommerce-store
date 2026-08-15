@@ -243,27 +243,28 @@ export default function App() {
 
           <nav className="hidden md:flex items-center space-x-1 bg-slate-900/50 p-1 rounded-xl border border-slate-700/50">
             <button
-              onClick={() => setActiveTab('store')}
-              className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${
-                activeTab === 'store' 
-                  ? 'bg-rose-800 text-white shadow-md shadow-rose-200/25' 
-                  : 'text-slate-200 hover:text-white hover:bg-slate-800'
-              }`}
-            >
-              <Store className="w-4 h-4" />
-              <span>Storefront</span>
-            </button>
-            <button
-              onClick={() => setActiveTab('dashboard')}
-              className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${
-                activeTab === 'dashboard' 
-                  ? 'bg-rose-800 text-white shadow-md shadow-rose-200/25' 
-                  : 'text-slate-200 hover:text-white hover:bg-slate-800'
-              }`}
-            >
-              <LayoutDashboard className="w-4 h-4" />
-              <span>Admin Syaharuddin</span>
-            </button>
+  onClick={() => setActiveTab('store')}
+  className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+    activeTab === 'store'
+      ? 'bg-rose-600 text-white shadow-md shadow-rose-900/20'
+      : 'text-slate-100 hover:text-white hover:bg-slate-800'
+  }`}
+>
+  <Store className="w-4 h-4" />
+  <span>Storefront</span>
+</button>
+
+<button
+  onClick={() => setActiveTab('dashboard')}
+  className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+    activeTab === 'dashboard'
+      ? 'bg-rose-600 text-white shadow-md shadow-rose-900/20'
+      : 'text-slate-100 hover:text-white hover:bg-slate-800'
+  }`}
+>
+  <LayoutDashboard className="w-4 h-4" />
+  <span>Admin Syaharuddin</span>
+</button>
           </nav>
 
           <div className="flex items-center space-x-3">
