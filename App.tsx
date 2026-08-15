@@ -247,7 +247,7 @@ export default function App() {
               className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                 activeTab === 'store' 
                   ? 'bg-rose-500 text-white shadow-md shadow-rose-500/25' 
-                  : 'text-slate-400 hover:text-white hover:bg-slate-800'
+                  : 'text-slate-200 hover:text-white hover:bg-slate-800'
               }`}
             >
               <Store className="w-4 h-4" />
@@ -258,7 +258,7 @@ export default function App() {
               className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                 activeTab === 'dashboard' 
                   ? 'bg-rose-500 text-white shadow-md shadow-rose-500/25' 
-                  : 'text-slate-400 hover:text-white hover:bg-slate-800'
+                  : 'text-slate-200 hover:text-white hover:bg-slate-800'
               }`}
             >
               <LayoutDashboard className="w-4 h-4" />
