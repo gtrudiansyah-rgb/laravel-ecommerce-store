@@ -292,27 +292,27 @@ export default function App() {
             </button>
           </div>
         </div>
-
-        <div className="md:hidden flex border-t border-slate-700/60 bg-slate-900/90 px-4 py-2 justify-around">
-          <button
-            onClick={() => setActiveTab('store')}
-            className={`flex items-center space-x-1.5 text-sm font-medium px-4 py-1.5 rounded-lg ${
-              activeTab === 'store' ? 'bg-rose-500 text-white' : 'text-slate-400'
-            }`}
-          >
-            <Store className="w-4 h-4" />
-            <span>Storefront</span>
-          </button>
-          <button
-            onClick={() => setActiveTab('dashboard')}
-            className={`flex items-center space-x-1.5 text-sm font-medium px-4 py-1.5 rounded-lg ${
-              activeTab === 'dashboard' ? 'bg-rose-700 text-white' : 'text-slate-200'
-            }`}
-          >
-            <LayoutDashboard className="w-4 h-4" />
-            <span>Admin</span>
-          </button>
-        </div>
+          <div className="md:hidden flex border-t border-slate-700/60 bg-slate-900/90 px-4 py-2">
+  <button
+    onClick={() => setActiveTab('store')}
+    className={`flex items-center space-x-1.5 text-sm font-medium px-4 py-1.5 rounded-lg ${
+      activeTab === 'store' ? 'bg-rose-600 text-white' : 'text-slate-100'
+    }`}
+  >
+    <Store className="w-4 h-4" />
+    <span>Storefront</span>
+  </button>
+  <button
+    onClick={() => setActiveTab('dashboard')}
+    className={`flex items-center space-x-1.5 text-sm font-medium px-4 py-1.5 rounded-lg ${
+      activeTab === 'dashboard' ? 'bg-rose-600 text-white' : 'text-slate-100'
+    }`}
+  >
+    <LayoutDashboard className="w-4 h-4" />
+    <span>Admin</span>
+  </button>
+</div>
+         
       </header>
 
       {/* Main Content Area */}
