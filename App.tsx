@@ -428,17 +428,19 @@ export default function App() {
                 </div>
               ) : (
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {filteredProducts.map(product => (
-                    <div 
-                      key={product.id}
-                      className="bg-slate-800/70 border border-slate-700/70 rounded-2xl overflow-hidden hover:border-rose-500/50 transition-all duration-300 flex flex-col group shadow-lg"
-                    >
-                      <div className="relative h-52 overflow-hidden bg-slate-900">
-                        <img 
-                          src={product.image} 
-                          alt={product.name}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
+                  {filteredProducts.map((product, index) => (
+  <div
+    key={product.id}
+    className="bg-slate-800/70 border border-slate-700/70 rounded-2xl..."
+  >
+    <div className="relative h-52 overflow-hidden bg-slate-900">
+      <img
+        src={product.image}
+        alt={product.name}
+        fetchPriority={index === 0 ? "high" : "auto"}
+        loading={index === 0 ? "eager" : "lazy"}
+        className="w-full h-full object-cover group-hover:scale-105..."
+      />
                         <span className="absolute top-3 right-3 px-2.5 py-1 bg-slate-900/80 backdrop-blur-md border border-slate-700 text-xs font-medium text-rose-400 rounded-lg">
                           {product.category}
                         </span>
